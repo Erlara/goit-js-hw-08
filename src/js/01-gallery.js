@@ -5,10 +5,9 @@ import "simplelightbox/dist/simple-lightbox.min.css";
 // Change code below this line
 
 console.log(galleryItems);
-//console.log(SimpleLightbox);
 
 const galleryEl = document.querySelector(".gallery");
-console.log(galleryEl);
+//console.log(galleryEl);
 
 const markup = galleryItems
   .map(
@@ -16,9 +15,9 @@ const markup = galleryItems
       preview,
       original,
       description,
-    }) => `<li><a class="gallery__item" href="${original}"> 
+    }) => `<a class="gallery__item" href="${original}"> 
   <img class="gallery__image" src="${preview}" alt="${description}" />
-</a></li>`
+</a>`
   )
     .join("");
   
